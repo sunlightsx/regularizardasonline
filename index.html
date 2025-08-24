@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17503564455"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17503564455');
+</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Empresa de Energia Renovável — Página Simples</title>
+  <meta name="description" content="Página simples com tópicos de serviços, endereço e CNPJ.">
+  <style>
+    :root{--bg:#0b1220;--card:#111a2f;--text:#e6eef8;--muted:#9fb0c9;--brand:#00b3a4;--brand2:#3b82f6}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:var(--text);background:
+      radial-gradient(900px 400px at 90% -10%, rgba(59,130,246,.14), transparent 60%),
+      radial-gradient(700px 360px at 10% 0%, rgba(0,179,164,.18), transparent 60%),
+      var(--bg);line-height:1.6}
+    .wrap{width:min(920px,92vw);margin:0 auto;padding:28px 0}
+    header{position:sticky;top:0;background:rgba(11,18,32,.6);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .top{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:#0b1220;font-weight:900;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+    .hero{padding:32px 0 10px}
+    h1{margin:0 0 6px;font-size:clamp(22px,5vw,38px)}
+    .lead{margin:0;color:var(--muted)}
+    section{padding:22px 0}
+    h2{font-size:clamp(18px,3.4vw,26px);margin:0 0 12px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .card p{margin:0;color:var(--muted)}
+    footer{border-top:1px solid rgba(255,255,255,.08);color:var(--muted);}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width:820px){.cards{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+    .note{font-size:12px;color:var(--muted);margin-top:8px}
+    a.btn{display:inline-block;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#0b1220;font-weight:800;padding:10px 14px;border-radius:999px;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <div class="brand"><div class="logo" aria-hidden>⚡</div><span>Empresa de Energia Renovável</span></div>
+      <a class="btn" href="#contato">Fale conosco</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Soluções em energia para reduzir custos</h1>
+      <p class="lead">Página simples, moderna e objetiva — destaque seus serviços, endereço e CNPJ.</p>
+      <p class="note">*Substitua o nome e os dados abaixo pelos da sua empresa. Não é uma página oficial.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Principais serviços</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Consultoria</h3>
+          <p>Análise de consumo e indicação de solução sob medida.</p>
+        </div>
+        <div class="card">
+          <h3>Projeto</h3>
+          <p>Documentação, ART e acompanhamento de homologação.</p>
+        </div>
+        <div class="card">
+          <h3>Instalação</h3>
+          <p>Equipe certificada com entrega técnica e segurança.</p>
+        </div>
+        <div class="card">
+          <h3>Monitoramento</h3>
+          <p>Acompanhamento online da performance energética.</p>
+        </div>
+        <div class="card">
+          <h3>Manutenção</h3>
+          <p>Limpeza, inspeções e correções preventivas.</p>
+        </div>
+        <div class="card">
+          <h3>Eficiência</h3>
+          <p>Medidas para reduzir desperdícios e custos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Endereço & CNPJ</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Endereço</h3>
+          <p>Rua Exemplo, 123 — Bairro — Cidade/UF — CEP 06453-038</p>
+        </div>
+        <div class="card">
+          <h3>CNPJ</h3>
+          <p>46.937.275/0001-57</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="year"></span> Empresa de Energia Renovável — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
